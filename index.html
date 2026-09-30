@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bequitas Foundation 博道基金會</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#E8876D;
+    --coral-deep:#D2694F;
+    --sage:#8CA383;
+    --sage-deep:#6E8465;
+    --brown:#6B4A35;
+    --cream:#FBF7F1;
+    --cream-deep:#F3EBE0;
+    --ink:#3A342E;
+    --ink-soft:#6b6259;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+  .zh{
+    font-family:'Noto Serif TC','Noto Sans TC',serif;
+  }
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+
+  /* ---------- Vine signature element ---------- */
+  .vine-track{
+    position:absolute;
+    left:50%;
+    top:0;
+    width:2px;
+    height:100%;
+    transform:translateX(-50%);
+    z-index:0;
+    pointer-events:none;
+  }
+  .vine-track svg{
+    width:100%;
+    height:100%;
+    overflow:visible;
+  }
+  .vine-path{
+    fill:none;
+    stroke:var(--sage);
+    stroke-width:2;
+    stroke-linecap:round;
+    opacity:0.35;
+    stroke-dasharray:1;
+    stroke-dashoffset:1;
+  }
+
+  /* ---------- Header ---------- */
+  header{
+    position:fixed;
+    top:0;left:0;right:0;
+    z-index:50;
+    background:rgba(251,247,241,0.88);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(107,74,53,0.08);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:14px 28px;
+    max-width:1080px;
+    margin:0 auto;
+  }
+  .nav-brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:1.05rem;
+    text-decoration:none;
+  }
+  .nav-brand img{height:34px;width:34px;object-fit:contain;border-radius:8px;}
+  .nav-links{
+    display:flex;
+    gap:28px;
+    font-size:0.92rem;
+    font-weight:500;
+  }
+  .nav-links a{
+    text-decoration:none;
+    color:var(--ink-soft);
+    transition:color 0.2s;
+    padding:4px 2px;
+  }
+  .nav-links a:hover, .nav-links a:focus-visible{color:var(--coral-deep);}
+  .nav-cta{
+    background:var(--coral-deep);
+    color:white !important;
+    padding:9px 20px;
+    border-radius:100px;
+    text-decoration:none;
+    font-size:0.88rem;
+    font-weight:600;
+    transition:background 0.2s, transform 0.2s;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:#bd5a41; transform:translateY(-1px);}
+  .nav-toggle{display:none;}
+
+  @media (max-width:720px){
+    .nav-links{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;
+    padding:170px 28px 100px;
+    text-align:center;
+    overflow:hidden;
+  }
+  .hero-logo{
+    width:108px;
+    height:108px;
+    object-fit:contain;
+    margin:0 auto 28px;
+    display:block;
+    filter:drop-shadow(0 6px 18px rgba(107,74,53,0.12));
+  }
+  .hero h1{
+    font-size:clamp(2.1rem, 5vw, 3.4rem);
+    line-height:1.12;
+    max-width:760px;
+    margin:0 auto 10px;
+  }
+  .hero .zh-name{
+    font-size:1.15rem;
+    color:var(--brown);
+    font-weight:500;
+    margin-bottom:24px;
+    letter-spacing:0.04em;
+  }
+  .hero p.tagline{
+    max-width:480px;
+    margin:0 auto 40px;
+    color:var(--ink-soft);
+    font-size:1.08rem;
+  }
+  .hero-ctas{
+    display:flex;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+  .btn{
+    display:inline-block;
+    padding:14px 30px;
+    border-radius:100px;
+    font-weight:600;
+    text-decoration:none;
+    font-size:0.98rem;
+    transition:transform 0.2s, box-shadow 0.2s, background 0.2s;
+  }
+  .btn:focus-visible{outline:2px solid var(--brown); outline-offset:3px;}
+  .btn-primary{
+    background:var(--coral-deep);
+    color:white;
+    box-shadow:0 6px 18px rgba(210,105,79,0.28);
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 22px rgba(210,105,79,0.34);}
+  .btn-secondary{
+    background:transparent;
+    color:var(--brown);
+    border:1.5px solid rgba(107,74,53,0.3);
+  }
+  .btn-secondary:hover{border-color:var(--brown); background:rgba(107,74,53,0.05);}
+
+  .status-badge{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:44px;
+    padding:8px 18px;
+    border-radius:100px;
+    background:var(--cream-deep);
+    color:var(--sage-deep);
+    font-size:0.82rem;
+    font-weight:600;
+    letter-spacing:0.02em;
+  }
+  .status-badge .dot{
+    width:6px;height:6px;border-radius:50%;
+    background:var(--sage-deep);
+  }
+
+  /* ---------- Section shared ---------- */
+  section{
+    position:relative;
+    padding:88px 0;
+  }
+  .eyebrow{
+    font-size:0.8rem;
+    font-weight:600;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:var(--sage-deep);
+    margin-bottom:14px;
+  }
+  section h2{
+    font-size:clamp(1.7rem, 3.4vw, 2.3rem);
+    margin-bottom:22px;
+  }
+
+  /* ---------- About ---------- */
+  .about-grid{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:64px;
+    align-items:start;
+  }
+  .about-grid p{color:var(--ink-soft); margin-bottom:16px; font-size:1.02rem;}
+  .about-card{
+    background:white;
+    border-radius:18px;
+    padding:32px;
+    border:1px solid rgba(107,74,53,0.08);
+    box-shadow:0 8px 30px rgba(107,74,53,0.06);
+  }
+  .about-card h3{
+    font-size:1.15rem;
+    margin-bottom:10px;
+    color:var(--brown);
+  }
+  .about-card .sub{
+    font-size:0.88rem;
+    color:var(--ink-soft);
+    margin-bottom:20px;
+  }
+  .about-card .quote{
+    font-family:'Fraunces',serif;
+    font-style:italic;
+    font-size:1.05rem;
+    color:var(--ink);
+    border-left:3px solid var(--coral);
+    padding-left:16px;
+    line-height:1.5;
+  }
+  @media (max-width:800px){
+    .about-grid{grid-template-columns:1fr; gap:36px;}
+  }
+
+  /* ---------- Programs ---------- */
+  .programs{
+    background:var(--cream-deep);
+  }
+  .programs-header{text-align:center; max-width:560px; margin:0 auto 52px;}
+  .programs-header h2{margin-bottom:14px;}
+  .programs-header p{color:var(--ink-soft);}
+  .program-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+  }
+  .program-card{
+    background:var(--cream);
+    border-radius:20px;
+    padding:36px 32px;
+    border:1px solid rgba(107,74,53,0.08);
+  }
+  .program-icon{
+    width:46px;height:46px;
+    border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:20px;
+    font-size:1.3rem;
+  }
+  .program-icon.a{background:rgba(232,135,109,0.16); color:var(--coral-deep);}
+  .program-icon.b{background:rgba(140,163,131,0.2); color:var(--sage-deep);}
+  .program-card h3{font-size:1.2rem; margin-bottom:10px;}
+  .program-card p{color:var(--ink-soft); font-size:0.97rem;}
+  @media (max-width:720px){
+    .program-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- Get Involved ---------- */
+  .involved-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+  }
+  .involved-card{
+    padding:36px 32px;
+    border-radius:20px;
+    background:white;
+    border:1px solid rgba(107,74,53,0.08);
+  }
+  .involved-card h3{font-size:1.25rem; margin-bottom:12px;}
+  .involved-card p{color:var(--ink-soft); margin-bottom:24px; font-size:0.98rem;}
+  @media (max-width:720px){
+    .involved-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- Contact / Footer ---------- */
+  footer{
+    background:var(--brown);
+    color:#f1e8de;
+    padding:56px 0 30px;
+  }
+  .footer-grid{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-bottom:36px;
+  }
+  footer h3{color:#fff; font-size:1.1rem; margin-bottom:14px;}
+  footer p, footer a{color:#e4d6c8; text-decoration:none; font-size:0.92rem;}
+  footer a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.14);
+    padding-top:22px;
+    font-size:0.82rem;
+    color:#c9b8a8;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* fade-in on scroll */
+  .fade-up{
+    opacity:0;
+    transform:translateY(18px);
+    transition:opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible{opacity:1; transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<div class="vine-track" aria-hidden="true">
+  <svg viewBox="0 0 2 3000" preserveAspectRatio="none">
+    <path class="vine-path" id="vinePath" d="M1,0 L1,3000"/>
+  </svg>
+</div>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="nav-brand">
+      <img src="logo.jpg" alt="Bequitas Foundation logo">
+      <span>Bequitas</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#involved">Get Involved</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="#involved" class="nav-cta">Donate</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <img src="logo.jpg" alt="Bequitas Foundation" class="hero-logo">
+    <h1>A fair start, for every child in Hong Kong.</h1>
+    <div class="zh-name">博道基金會</div>
+    <p class="tagline">Bequitas Foundation advances education and supports underprivileged communities across Hong Kong — helping young people grow into who they're meant to be.</p>
+    <div class="hero-ctas">
+      <a href="#involved" class="btn btn-primary">Support Our Work</a>
+      <a href="#programs" class="btn btn-secondary">See Our Programs</a>
+    </div>
+    <div class="status-badge">
+      <span class="dot"></span>
+      Registered Section 88 Tax-Exempt Charity, Hong Kong
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about-grid fade-up">
+      <div>
+        <div class="eyebrow">Our Story</div>
+        <h2>Education is the root. Everything else grows from it.</h2>
+        <p>Bequitas Foundation Limited was founded on a simple belief: talent and potential are distributed equally across Hong Kong, but opportunity is not. We work to close that gap.</p>
+        <p>We partner with schools, community organizations, and families to provide the resources, mentorship, and support that underprivileged students and communities need to thrive — not as charity given from a distance, but as a hand offered alongside.</p>
+        <p>Having recently received Section 88 tax-exempt status, we're building the foundation for long-term, sustainable impact across Hong Kong.</p>
+      </div>
+      <div class="about-card">
+        <h3>Bequitas 博道</h3>
+        <div class="sub">Section 88 Registered Charity · Hong Kong</div>
+        <div class="quote">"Advancement of education and relief of the underprivileged — that is the whole of our mandate, and the whole of our hope."</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" class="programs">
+    <div class="wrap">
+      <div class="programs-header fade-up">
+        <div class="eyebrow">What We Do</div>
+        <h2>Two commitments, one purpose</h2>
+        <p>Every program we run traces back to the same goal: giving people the footing to build a better future for themselves.</p>
+      </div>
+      <div class="program-grid">
+        <div class="program-card fade-up">
+          <div class="program-icon a">🎓</div>
+          <h3>Advancement of Education</h3>
+          <p>Scholarships, tutoring, learning resources, and mentorship for students who show promise but lack the means to pursue it — from primary school through tertiary education.</p>
+        </div>
+        <div class="program-card fade-up">
+          <div class="program-icon b">🤝</div>
+          <h3>Underprivileged Community Support</h3>
+          <p>Direct support for low-income families and communities across Hong Kong, including essentials, community programs, and partnerships with local organizations already doing this work on the ground.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="involved">
+    <div class="wrap">
+      <div class="programs-header fade-up">
+        <div class="eyebrow">Get Involved</div>
+        <h2>There's a place for you in this</h2>
+      </div>
+      <div class="involved-grid">
+        <div class="involved-card fade-up">
+          <h3>Make a Donation</h3>
+          <p>Every donation is tax-deductible under our Section 88 status and goes directly toward education and community programs.</p>
+          <a href="#" class="btn btn-primary" id="donateBtn">Donate Now</a>
+        </div>
+        <div class="involved-card fade-up">
+          <h3>Partner or Volunteer</h3>
+          <p>Schools, businesses, and individuals — if you'd like to partner with us or volunteer your time, we'd love to hear from you.</p>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h3>Bequitas Foundation 博道基金會</h3>
+        <p style="max-width:280px; margin-top:8px;">Advancing education and supporting underprivileged communities across Hong Kong.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="mailto:info@bequitasfoundation.org">info@bequitasfoundation.org</a></p>
+        <p style="margin-top:6px;">Hong Kong</p>
+      </div>
+      <div>
+        <h3>Foundation</h3>
+        <p><a href="#about">About</a></p>
+        <p style="margin-top:6px;"><a href="#programs">Programs</a></p>
+        <p style="margin-top:6px;"><a href="#involved">Get Involved</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Bequitas Foundation Limited. All rights reserved.</span>
+      <span>Section 88 Registered Charity, Hong Kong</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Fade-up on scroll
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('visible'); }
+    });
+  }, {threshold:0.15});
+  document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+
+  // Vine grows with scroll depth
+  const vinePath = document.getElementById('vinePath');
+  const vineLength = vinePath.getTotalLength();
+  vinePath.style.strokeDasharray = vineLength;
+  function updateVine(){
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = Math.min(scrollTop / docHeight, 1);
+    vinePath.style.strokeDashoffset = vineLength * (1 - progress);
+  }
+  window.addEventListener('scroll', updateVine);
+  updateVine();
+
+  // Placeholder donate button
+  document.getElementById('donateBtn').addEventListener('click', function(e){
+    e.preventDefault();
+    alert('Add your Stripe Payment Link or PayPal button URL here to make this button live.');
+  });
+</script>
+
+</body>
+</html>
