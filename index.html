@@ -78,7 +78,7 @@
     display:flex; align-items:center; gap:1.5rem; height:4.5rem;
   }
   .brand{ display:flex; align-items:center; gap:0.9rem; text-decoration:none; flex-shrink:0; }
-  .brand img{ height:4.56rem; width:auto; }
+  .brand img{ height:5.47rem; width:auto; }
   .brand-word{ display:flex; flex-direction:column; line-height:1.15; justify-content:center; width:240px; flex-shrink:0; }
   .brand-word [data-lang-el="en"]{ font-family:'Newsreader', serif; font-weight:600; font-size:1.5rem; color:var(--ink); }
   .brand-word [data-lang-el="zh-hant"], .brand-word [data-lang-el="zh-hans"]{ font-family:'Newsreader', serif; font-weight:600; font-size:1.4rem; color:var(--ink); letter-spacing:0.04em; }
@@ -139,7 +139,7 @@
     .navlinks{ display:none; }
     .nav-right > .btn{ display:none; }
     .brand{ gap:0.5rem; }
-    .brand img{ height:3rem; }
+    .brand img{ height:3.6rem; }
     .brand-word{ width:168px; }
     .brand-word [data-lang-el="en"]{ font-size:1.05rem; }
     .brand-word [data-lang-el="zh-hant"], .brand-word [data-lang-el="zh-hans"]{ font-size:1rem; }
@@ -401,10 +401,11 @@
   html.js .count{ animation:none; }
   html.js .count::after{ content:none; }
 
-  .bq .bq-hero-in{ max-width:1180px; margin:0 auto; box-sizing:border-box; padding:56px 32px 48px; min-height:268px; }
-  .bq .bq-hero-2col{ min-height:0; padding:56px 32px; }
+  .bq .bq-hero-in{ max-width:1180px; margin:0 auto; box-sizing:border-box; padding:40px 32px; min-height:210px; display:flex; flex-direction:column; justify-content:center; }
+  .bq .bq-hero-2col{ min-height:0; padding:56px 32px; display:grid; flex-direction:initial; }
   .bq .bq-hero-eyebrow{ font-family:'Space Mono',monospace; font-size:13px; letter-spacing:0.12em; color:#D9C9A3; min-height:22px; line-height:22px; }
-  .bq .bq-hero-title{ margin:8px 0 0; font-family:'Newsreader',serif; font-weight:600; font-size:48px; line-height:1.15; color:#FFFBF2; }
+  .bq .bq-hero-title{ margin:0; font-family:'Newsreader',serif; font-weight:600; font-size:48px; line-height:1.15; color:#FFFBF2; }
+  .bq .bq-hero-eyebrow + .bq-hero-title{ margin-top:8px; }
   .bq .bq-hero-sub{ margin:12px 0 0; max-width:720px; font-family:'Work Sans',system-ui,sans-serif; font-style:normal; font-weight:400; font-size:17px; line-height:1.7; color:#E8DFCB; }
   @media (max-width:640px){ .bq .bq-hero-in{ min-height:0; padding:40px 20px 36px; } .bq .bq-hero-title{ font-size:34px; } }
 </style>
@@ -423,7 +424,7 @@
       <a href="#home" data-nav style="width:44px; text-align:center; flex-shrink:0;"><span data-lang-el="en">Home</span><span data-lang-el="zh-hant" lang="zh-Hant">首頁</span><span data-lang-el="zh-hans" lang="zh-Hans">首页</span></a>
       <div class="navdrop">
         <a href="#about" data-nav style="width:66px; text-align:center; flex-shrink:0;"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></a>
-        <div class="navdrop-panel"><a href="#about/donor" data-nav><span data-lang-el="en">A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">捐款者的话</span></a><a href="#about/vision" data-nav><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></a><a href="#about/philosophy" data-nav><span data-lang-el="en">Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">思想根基</span></a><a href="#about/directors" data-nav><span data-lang-el="en">Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">董事会</span></a><a href="#about/governance" data-nav><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></a></div>
+        <div class="navdrop-panel"><a href="#about/donor" data-nav><span data-lang-el="en">A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">捐款者的话</span></a><a href="#about/vision" data-nav><span data-lang-el="en">Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></a><a href="#about/philosophy" data-nav><span data-lang-el="en">Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">思想根基</span></a><a href="#about/directors" data-nav><span data-lang-el="en">Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">董事会</span></a></div>
       </div>
       <div class="navdrop">
         <a href="#programs" data-nav data-nav-also="reading" style="width:98px; text-align:center; flex-shrink:0;"><span data-lang-el="en">Our Programs</span><span data-lang-el="zh-hant" lang="zh-Hant">我們的計劃</span><span data-lang-el="zh-hans" lang="zh-Hans">我们的计划</span></a>
@@ -449,10 +450,9 @@
     <a href="#home" data-nav><span data-lang-el="en">Home</span><span data-lang-el="zh-hant" lang="zh-Hant">首頁</span><span data-lang-el="zh-hans" lang="zh-Hans">首页</span></a>
     <a href="#about" data-nav><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></a>
     <a href="#about/donor" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">— 捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">— 捐款者的话</span></a>
-    <a href="#about/vision" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">— 願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">— 愿景、使命与宗旨</span></a>
+    <a href="#about/vision" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">— 願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">— 愿景、使命与宗旨</span></a>
     <a href="#about/philosophy" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">— 思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">— 思想根基</span></a>
     <a href="#about/directors" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">— 董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">— 董事会</span></a>
-    <a href="#about/governance" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">— 管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">— 管治架构</span></a>
     <a href="#programs" data-nav data-nav-also="reading"><span data-lang-el="en">Our Programs</span><span data-lang-el="zh-hant" lang="zh-Hant">我們的計劃</span><span data-lang-el="zh-hans" lang="zh-Hans">我们的计划</span></a>
     <a href="#programs" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— Core Programs</span><span data-lang-el="zh-hant" lang="zh-Hant">— 核心計劃</span><span data-lang-el="zh-hans" lang="zh-Hans">— 核心计划</span></a>
     <a href="#reading" data-nav style="padding-left:2.75rem; font-size:0.85rem; font-weight:600; color:var(--ink-soft);"><span data-lang-el="en">— Reading Program</span><span data-lang-el="zh-hant" lang="zh-Hant">— 閱讀計劃</span><span data-lang-el="zh-hans" lang="zh-Hans">— 阅读计划</span></a>
@@ -537,7 +537,6 @@
 <section class="page" data-page="about/donor"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">ABOUT US</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Meet Bequitas Foundation — where we came from, what we believe and who we are.</span><span data-lang-el="zh-hant" lang="zh-Hant">認識博道基金會的起源、信念與團隊。</span><span data-lang-el="zh-hans" lang="zh-Hans">认识博道基金会的起源、信念与团队。</span></p>
 </div>
@@ -554,10 +553,9 @@
 <aside style="background: #E9E3D5; border-radius: 18px; padding: 14px">
 <nav class="bq-side" aria-label="About Us" style="display: flex; flex-direction: column; gap: 4px">
 <a href="#about/donor" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; background: #FFFCF4; text-decoration: none; color: #223D26; font-weight: 700; box-shadow: 0 1px 2px rgba(32,29,24,0.08)"><span style="flex-grow: 1"><span data-lang-el="en">A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">捐款者的话</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#2F5233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/vision" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
+<a href="#about/vision" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/philosophy" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">思想根基</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/directors" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">董事会</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/governance" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 </nav>
 </aside>
 
@@ -584,7 +582,6 @@
 <section class="page" data-page="about/vision"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">ABOUT US</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Meet Bequitas Foundation — where we came from, what we believe and who we are.</span><span data-lang-el="zh-hant" lang="zh-Hant">認識博道基金會的起源、信念與團隊。</span><span data-lang-el="zh-hans" lang="zh-Hans">认识博道基金会的起源、信念与团队。</span></p>
 </div>
@@ -594,23 +591,22 @@
 <span aria-hidden="true">›</span>
 <a href="#about/donor" style="color: #5A5346; text-decoration: none"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></a>
 <span aria-hidden="true">›</span>
-<span style="color: #2F5233; font-weight: 600"><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span>
+<span style="color: #2F5233; font-weight: 600"><span data-lang-el="en">Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span>
 </nav>
 </div><div style="max-width: 1180px; margin: 0 auto; padding: 32px 32px 96px; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 56px; align-items: start">
 
 <aside style="background: #E9E3D5; border-radius: 18px; padding: 14px">
 <nav class="bq-side" aria-label="About Us" style="display: flex; flex-direction: column; gap: 4px">
 <a href="#about/donor" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">捐款者的话</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/vision" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; background: #FFFCF4; text-decoration: none; color: #223D26; font-weight: 700; box-shadow: 0 1px 2px rgba(32,29,24,0.08)"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#2F5233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
+<a href="#about/vision" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; background: #FFFCF4; text-decoration: none; color: #223D26; font-weight: 700; box-shadow: 0 1px 2px rgba(32,29,24,0.08)"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#2F5233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/philosophy" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">思想根基</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/directors" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">董事会</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/governance" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 </nav>
 </aside>
 
 <main style="min-width: 0">
 <div style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #2F5233"><span data-lang-el="en">WHAT WE STAND FOR</span><span data-lang-el="zh-hant" lang="zh-Hant"></span><span data-lang-el="zh-hans" lang="zh-Hans"></span></div>
-<h2 style="margin: 6px 0 0; font-family: 'Newsreader', serif; font-weight: 600; font-size: 36px; line-height: 1.2"><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></h2>
+<h2 style="margin: 6px 0 0; font-family: 'Newsreader', serif; font-weight: 600; font-size: 36px; line-height: 1.2"><span data-lang-el="en">Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></h2>
 <div style="height: 3px; width: 72px; background: #2F5233; margin: 18px 0 36px"></div>
 
 <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
@@ -671,7 +667,6 @@
 <section class="page" data-page="about/philosophy"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">ABOUT US</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Meet Bequitas Foundation — where we came from, what we believe and who we are.</span><span data-lang-el="zh-hant" lang="zh-Hant">認識博道基金會的起源、信念與團隊。</span><span data-lang-el="zh-hans" lang="zh-Hans">认识博道基金会的起源、信念与团队。</span></p>
 </div>
@@ -688,10 +683,9 @@
 <aside style="background: #E9E3D5; border-radius: 18px; padding: 14px">
 <nav class="bq-side" aria-label="About Us" style="display: flex; flex-direction: column; gap: 4px">
 <a href="#about/donor" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">捐款者的话</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/vision" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
+<a href="#about/vision" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/philosophy" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; background: #FFFCF4; text-decoration: none; color: #223D26; font-weight: 700; box-shadow: 0 1px 2px rgba(32,29,24,0.08)"><span style="flex-grow: 1"><span data-lang-el="en">Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">思想根基</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#2F5233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/directors" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">董事会</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/governance" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 </nav>
 </aside>
 
@@ -779,7 +773,6 @@
 <section class="page" data-page="about/directors"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">ABOUT US</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Meet Bequitas Foundation — where we came from, what we believe and who we are.</span><span data-lang-el="zh-hant" lang="zh-Hant">認識博道基金會的起源、信念與團隊。</span><span data-lang-el="zh-hans" lang="zh-Hans">认识博道基金会的起源、信念与团队。</span></p>
 </div>
@@ -796,10 +789,9 @@
 <aside style="background: #E9E3D5; border-radius: 18px; padding: 14px">
 <nav class="bq-side" aria-label="About Us" style="display: flex; flex-direction: column; gap: 4px">
 <a href="#about/donor" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">捐款者的话</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/vision" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
+<a href="#about/vision" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objectives</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/philosophy" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">思想根基</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 <a href="#about/directors" aria-current="page" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; background: #FFFCF4; text-decoration: none; color: #223D26; font-weight: 700; box-shadow: 0 1px 2px rgba(32,29,24,0.08)"><span style="flex-grow: 1"><span data-lang-el="en">Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">董事会</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#2F5233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/governance" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
 </nav>
 </aside>
 
@@ -833,51 +825,9 @@
 </div>
 </div></section>
 
-<section class="page" data-page="about/governance"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
-<section class="bq-hero" style="background: #223D26; color: #FFFBF2">
-<div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">ABOUT US</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></div>
-<h1 class="bq-hero-title"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></h1>
-<p class="bq-hero-sub"><span data-lang-el="en">Meet Bequitas Foundation — where we came from, what we believe and who we are.</span><span data-lang-el="zh-hant" lang="zh-Hant">認識博道基金會的起源、信念與團隊。</span><span data-lang-el="zh-hans" lang="zh-Hans">认识博道基金会的起源、信念与团队。</span></p>
-</div>
-</section><div style="max-width: 1180px; margin: 0 auto; padding: 18px 32px 0">
-<nav aria-label="Breadcrumb" style="display: flex; gap: 10px; align-items: center; font-size: 14px; color: #5A5346">
-<a href="#home" style="color: #5A5346; text-decoration: none"><span data-lang-el="en">Home</span><span data-lang-el="zh-hant" lang="zh-Hant">首頁</span><span data-lang-el="zh-hans" lang="zh-Hans">首页</span></a>
-<span aria-hidden="true">›</span>
-<a href="#about/donor" style="color: #5A5346; text-decoration: none"><span data-lang-el="en">About Us</span><span data-lang-el="zh-hant" lang="zh-Hant">關於我們</span><span data-lang-el="zh-hans" lang="zh-Hans">关于我们</span></a>
-<span aria-hidden="true">›</span>
-<span style="color: #2F5233; font-weight: 600"><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></span>
-</nav>
-</div><div style="max-width: 1180px; margin: 0 auto; padding: 32px 32px 96px; display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 56px; align-items: start">
-
-<aside style="background: #E9E3D5; border-radius: 18px; padding: 14px">
-<nav class="bq-side" aria-label="About Us" style="display: flex; flex-direction: column; gap: 4px">
-<a href="#about/donor" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">A Word from Our Donor</span><span data-lang-el="zh-hant" lang="zh-Hant">捐款者的話</span><span data-lang-el="zh-hans" lang="zh-Hans">捐款者的话</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/vision" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Vision, Mission &amp; Objects</span><span data-lang-el="zh-hant" lang="zh-Hant">願景、使命與宗旨</span><span data-lang-el="zh-hans" lang="zh-Hans">愿景、使命与宗旨</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/philosophy" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Philosophy</span><span data-lang-el="zh-hant" lang="zh-Hant">思想根基</span><span data-lang-el="zh-hans" lang="zh-Hans">思想根基</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/directors" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; text-decoration: none; color: #201D18; font-weight: 500"><span style="flex-grow: 1"><span data-lang-el="en">Our Directors</span><span data-lang-el="zh-hant" lang="zh-Hant">董事會</span><span data-lang-el="zh-hans" lang="zh-Hans">董事会</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#8C8372" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-<a href="#about/governance" style="display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; border-radius: 12px; background: #FFFCF4; text-decoration: none; color: #223D26; font-weight: 700; box-shadow: 0 1px 2px rgba(32,29,24,0.08)" aria-current="page"><span style="flex-grow: 1"><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></span><svg width="16" height="16" viewbox="0 0 16 16" fill="none" stroke="#2F5233" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"></path></svg></a>
-</nav>
-</aside>
-
-<main style="min-width: 0">
-<div style="font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #2F5233"><span data-lang-el="en">ACCOUNTABILITY</span><span data-lang-el="zh-hant" lang="zh-Hant"></span><span data-lang-el="zh-hans" lang="zh-Hans"></span></div>
-<h2 style="margin: 6px 0 0; font-family: 'Newsreader', serif; font-weight: 600; font-size: 36px; line-height: 1.2"><span data-lang-el="en">Governance</span><span data-lang-el="zh-hant" lang="zh-Hant">管治架構</span><span data-lang-el="zh-hans" lang="zh-Hans">管治架构</span></h2>
-<div style="height: 3px; width: 72px; background: #2F5233; margin: 18px 0 36px"></div>
-<div style="background: #FFFCF4; border-radius: 20px; padding: 14px 32px 8px"><div class="facts">
-      <div class="fact"><div class="k"><span data-lang-el="en">STRUCTURE</span><span data-lang-el="zh-hant" lang="zh-Hant">組織架構</span><span data-lang-el="zh-hans" lang="zh-Hans">组织架构</span></div><div class="v"><span data-lang-el="en">Company limited by guarantee, incorporated in Hong Kong</span><span data-lang-el="zh-hant" lang="zh-Hant">於香港註冊成立之擔保有限公司</span><span data-lang-el="zh-hans" lang="zh-Hans">于香港注册成立之担保有限公司</span></div></div>
-      <div class="fact"><div class="k"><span data-lang-el="en">TAX STATUS</span><span data-lang-el="zh-hant" lang="zh-Hant">稅務狀況</span><span data-lang-el="zh-hans" lang="zh-Hans">税务状况</span></div><div class="v"><span data-lang-el="en">Exempt charity under Section 88 of the Inland Revenue Ordinance (Cap. 112), effective June 10, 2026</span><span data-lang-el="zh-hant" lang="zh-Hant">根據《稅務條例》（第112章）第88條獲豁免繳稅的慈善機構，由2026年6月10日起生效</span><span data-lang-el="zh-hans" lang="zh-Hans">根据《税务条例》（第112章）第88条获豁免缴税的慈善机构，由2026年6月10日起生效</span> <span class="mono" style="color:var(--ink-soft); font-size:0.85rem;"><span data-lang-el="en">IR File No. 91/20886</span><span data-lang-el="zh-hant" lang="zh-Hant">稅務局檔案編號 91/20886</span><span data-lang-el="zh-hans" lang="zh-Hans">税务局档案编号 91/20886</span></span></div></div>
-      <div class="fact"><div class="k"><span data-lang-el="en">DIRECTORS</span><span data-lang-el="zh-hant" lang="zh-Hant">董事</span><span data-lang-el="zh-hans" lang="zh-Hans">董事</span></div><div class="v"><span data-lang-el="en">Allan Chan &amp; Sybil Lin</span><span data-lang-el="zh-hant" lang="zh-Hant">Allan Chan、Sybil Lin</span><span data-lang-el="zh-hans" lang="zh-Hans">Allan Chan、Sybil Lin</span></div></div>
-      <div class="fact"><div class="k"><span data-lang-el="en">REGISTERED OFFICE</span><span data-lang-el="zh-hant" lang="zh-Hant">註冊辦事處</span><span data-lang-el="zh-hans" lang="zh-Hans">注册办事处</span></div><div class="v"><span data-lang-el="en">Room 29-33, 5/F, Beverley Commercial Centre, 87-105 Chatham Road South, Tsim Sha Tsui, Hong Kong</span><span data-lang-el="zh-hant" lang="zh-Hant">香港尖沙咀漆咸道南87-105號百利商業中心5樓29-33室</span><span data-lang-el="zh-hans" lang="zh-Hans">香港尖沙咀漆咸道南87-105号百利商业中心5楼29-33室</span></div></div>
-      <div class="fact"><div class="k"><span data-lang-el="en">INDEPENDENCE</span><span data-lang-el="zh-hant" lang="zh-Hant">獨立性</span><span data-lang-el="zh-hans" lang="zh-Hans">独立性</span></div><div class="v"><span data-lang-el="en">No formal affiliation with the organizations our programs benefit, including J Life Foundation and Christian Action</span><span data-lang-el="zh-hant" lang="zh-Hant">本會與所支援項目的受惠機構（包括啓愛共融社區中心及基督教勵行會）並無正式從屬關係</span><span data-lang-el="zh-hans" lang="zh-Hans">本会与所支持项目的受惠机构（包括启爱共融社区中心及基督教励行会）并无正式从属关系</span></div></div>
-    </div></div></main>
-</div>
-</div></section>
-
 <section class="page" data-page="programs"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">OUR PROGRAMS</span><span data-lang-el="zh-hant" lang="zh-Hant">我們的計劃</span><span data-lang-el="zh-hans" lang="zh-Hans">我们的计划</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">Our Programs</span><span data-lang-el="zh-hant" lang="zh-Hant">我們的計劃</span><span data-lang-el="zh-hans" lang="zh-Hans">我们的计划</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Education changes lives; opportunity shapes the future.</span><span data-lang-el="zh-hant" lang="zh-Hant">教育改變命運，機會成就未來。</span><span data-lang-el="zh-hans" lang="zh-Hans">教育改变命运，机会成就未来。</span></p>
 </div>
@@ -1071,7 +1021,6 @@
 <section class="page" data-page="impact"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">IMPACT</span><span data-lang-el="zh-hant" lang="zh-Hant">成效</span><span data-lang-el="zh-hans" lang="zh-Hans">成效</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">Impact</span><span data-lang-el="zh-hant" lang="zh-Hant">成效</span><span data-lang-el="zh-hans" lang="zh-Hans">成效</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Every program is a story of a child growing up.</span><span data-lang-el="zh-hant" lang="zh-Hant">每一項計劃，都是一個孩子成長的故事。</span><span data-lang-el="zh-hans" lang="zh-Hans">每一项计划，都是一个孩子成长的故事。</span></p>
 </div>
@@ -1180,7 +1129,6 @@
 <section class="page" data-page="partner"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">PARTNER WITH US</span><span data-lang-el="zh-hant" lang="zh-Hant">與我們合作</span><span data-lang-el="zh-hans" lang="zh-Hans">与我们合作</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">Partner with Us / Donate</span><span data-lang-el="zh-hant" lang="zh-Hant">與我們合作／捐款</span><span data-lang-el="zh-hans" lang="zh-Hans">与我们合作／捐款</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Join us in creating chances for the next generation to learn and grow.</span><span data-lang-el="zh-hant" lang="zh-Hant">與我們一起，為下一代創造學習與成長的機會。</span><span data-lang-el="zh-hans" lang="zh-Hans">与我们一起，为下一代创造学习与成长的机会。</span></p>
 </div>
@@ -1215,7 +1163,6 @@
 <section class="page" data-page="contact"><div class="bq" style="width: 100%; min-height: 60vh; background: #F2EEE4; color: #201D18; font-family: 'Work Sans', system-ui, sans-serif; font-size: 16px; line-height: 1.7">
 <section class="bq-hero" style="background: #223D26; color: #FFFBF2">
 <div class="bq-hero-in">
-<div class="bq-hero-eyebrow"><span data-lang-el="en">CONTACT</span><span data-lang-el="zh-hant" lang="zh-Hant">聯絡我們</span><span data-lang-el="zh-hans" lang="zh-Hans">联络我们</span></div>
 <h1 class="bq-hero-title"><span data-lang-el="en">Contact</span><span data-lang-el="zh-hant" lang="zh-Hant">聯絡我們</span><span data-lang-el="zh-hans" lang="zh-Hans">联络我们</span></h1>
 <p class="bq-hero-sub"><span data-lang-el="en">Get in touch to learn more or explore working together.</span><span data-lang-el="zh-hant" lang="zh-Hant">歡迎與我們聯絡，了解更多或探討合作機會。</span><span data-lang-el="zh-hans" lang="zh-Hans">欢迎与我们联络，了解更多或探讨合作机会。</span></p>
 </div>
@@ -1230,6 +1177,9 @@
 <div style="background: #FFFCF4; border-radius: 18px; padding: 24px 26px; display: flex; gap: 16px; align-items: flex-start">
 <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: #223D26; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="#FFFCF4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg></span>
 <div><div style="font-size: 14px; color: #5A5346"><span data-lang-el="en">Phone</span><span data-lang-el="zh-hant" lang="zh-Hant">電話</span><span data-lang-el="zh-hans" lang="zh-Hans">电话</span></div><a href="tel:+85237912086" style="font-weight: 600; margin-top: 2px; display: inline-block; text-decoration: none; color: #201D18">+852 3791 2086</a></div></div>
+<div style="background: #FFFCF4; border-radius: 18px; padding: 24px 26px; display: flex; gap: 16px; align-items: flex-start">
+<span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: #223D26; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewbox="0 0 24 24" fill="none" stroke="#FFFCF4" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span>
+<div><div style="font-size: 14px; color: #5A5346"><span data-lang-el="en">Email</span><span data-lang-el="zh-hant" lang="zh-Hant">電郵</span><span data-lang-el="zh-hans" lang="zh-Hans">电邮</span></div><a href="mailto:info@bequitas.org" style="font-weight: 600; margin-top: 2px; display: inline-block; text-decoration: none; color: #201D18">info@bequitas.org</a></div></div>
 </div></div>
 <div><h2 style="margin: 0; font-family: 'Newsreader', serif; font-weight: 600; font-size: 28px; line-height: 1.25"><span data-lang-el="en">Send us a message</span><span data-lang-el="zh-hant" lang="zh-Hant">傳送訊息</span><span data-lang-el="zh-hans" lang="zh-Hans">传送讯息</span></h2>
 <div style="height: 3px; width: 72px; background: #2F5233; margin: 16px 0 28px"></div><form style="background: #FFFCF4; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 18px" onsubmit="return false;"><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3A352C"><span data-lang-el="en">Name</span><span data-lang-el="zh-hant" lang="zh-Hant">姓名</span><span data-lang-el="zh-hans" lang="zh-Hans">姓名</span><input type="text" style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #DDD5C4; border-radius: 10px; background: #FFFCF4; font: inherit; color: #201D18"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3A352C"><span data-lang-el="en">Email address</span><span data-lang-el="zh-hant" lang="zh-Hant">電郵地址</span><span data-lang-el="zh-hans" lang="zh-Hans">电邮地址</span><input type="email" style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #DDD5C4; border-radius: 10px; background: #FFFCF4; font: inherit; color: #201D18"></label><label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 600; color: #3A352C"><span data-lang-el="en">Message</span><span data-lang-el="zh-hant" lang="zh-Hant">訊息內容</span><span data-lang-el="zh-hans" lang="zh-Hans">讯息内容</span><textarea rows="5" style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1px solid #DDD5C4; border-radius: 10px; background: #FFFCF4; font: inherit; color: #201D18; resize: vertical"></textarea></label><div><button type="button" style="border: 0; cursor: pointer; background: #2F5233; color: #FFFCF4; font-weight: 700; padding: 14px 26px; border-radius: 12px"><span data-lang-el="en">Send message</span><span data-lang-el="zh-hant" lang="zh-Hant">傳送訊息</span><span data-lang-el="zh-hans" lang="zh-Hans">传送讯息</span></button></div></form></div>
@@ -1244,7 +1194,7 @@
   var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
   var navLinks = Array.prototype.slice.call(document.querySelectorAll('[data-nav]'));
   var valid = pages.map(function(p){ return p.getAttribute('data-page'); });
-  var ABOUT_TABS = ['donor','vision','philosophy','directors','governance'];
+  var ABOUT_TABS = ['donor','vision','philosophy','directors'];
 
   function show(route){
     var parts = (route || 'home').split('/');
@@ -1333,29 +1283,44 @@
   function target(el){ return parseInt(el.style.getPropertyValue('--target'),10)||0; }
   function set(el,v){ el.textContent=String(v); }
   els.forEach(function(el){ set(el,target(el)); });
-  var timers=new WeakMap();
+  var raf=new WeakMap();
   function run(el){
     var t=target(el), dur=1800, start=null;
+    var old=raf.get(el); if(old) cancelAnimationFrame(old);
     if(reduce){ set(el,t); return; }
-    var old=timers.get(el); if(old) cancelAnimationFrame(old);
-    set(el,0);
+    el._running=true; set(el,0);
     function step(ts){
       if(start===null) start=ts;
       var p=Math.min(1,(ts-start)/dur), e=1-Math.pow(1-p,3);
       set(el,Math.round(t*e));
-      if(p<1) timers.set(el,requestAnimationFrame(step)); else timers.delete(el);
+      if(p<1) raf.set(el,requestAnimationFrame(step)); else { raf.delete(el); el._running=false; el._done=true; }
     }
-    timers.set(el,requestAnimationFrame(step));
+    raf.set(el,requestAnimationFrame(step));
   }
-  if(!('IntersectionObserver' in window)){ els.forEach(run); return; }
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(en){
-      var el=en.target._cnt;
-      if(en.isIntersecting){ if(!el._on){ el._on=true; run(el); } }
-      else if(el._on){ el._on=false; var old=timers.get(el); if(old) cancelAnimationFrame(old); set(el,target(el)); }
-    });
-  },{threshold:0.6});
-  els.forEach(function(el){ el.parentNode._cnt=el; io.observe(el.parentNode); });
+  function visible(el){ return el.offsetParent!==null; }
+  // Start every visible counter right away on load and on every page change.
+  function startVisible(){
+    els.forEach(function(el){ el._done=false; el._replayed=false; if(visible(el)) run(el); else { var o=raf.get(el); if(o) cancelAnimationFrame(o); el._running=false; set(el,target(el)); } });
+  }
+  // Safety net: if a counter was off-screen when it started and has finished, replay once when it scrolls into view.
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        var el=en.target._cnt;
+        if(en.isIntersecting && el._done && !el._replayed && !el._wasSeen){ el._replayed=true; run(el); }
+        if(en.isIntersecting) el._wasSeen=true;
+      });
+    },{threshold:0.5});
+    els.forEach(function(el){ el.parentNode._cnt=el; io.observe(el.parentNode); });
+    var _reset=function(){ els.forEach(function(el){ el._wasSeen=false; }); };
+    window.addEventListener('hashchange',_reset);
+    // mark counters that are on screen at start as seen so they do not replay
+    setTimeout(function(){ els.forEach(function(el){ if(visible(el)){ var r=el.parentNode.getBoundingClientRect(); if(r.top<innerHeight*0.9 && r.bottom>0) el._wasSeen=true; } }); },50);
+  }
+  window.addEventListener('hashchange',function(){ setTimeout(startVisible,30); });
+  window.addEventListener('pageshow',function(){ startVisible(); });
+  if(document.readyState==='complete') startVisible(); else window.addEventListener('load',startVisible);
+  startVisible();
 })();
 </script>
 </body></html>
